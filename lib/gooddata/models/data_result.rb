@@ -1,8 +1,8 @@
-require 'fastercsv'
+require 'csv'
 
 module GoodData
 
-  class Row < FasterCSV::Row
+  class Row < CSV::Row
     def ==(other)
        len = length()
        return false if len != other.length
