@@ -289,7 +289,7 @@ module GoodData
           GoodData.logger.debug "Response: Empty response possibly 204"
         elsif response.code == 204
           result = nil
-          GoodData.logger.debug "Reponse: 204 no content"
+          GoodData.logger.debug "Response: 204 no content"
         else
           raise "Unsupported response content type '%s':\n%s" % [ content_type, response.to_str[0..127] ]
         end
